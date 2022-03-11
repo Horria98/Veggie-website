@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Open+Sans:wght@500&display=swap');
+
+body{
+	font-family: 'Open Sans';
+}
+
+div{
+	/*background-color:gray;*/
+}
+
+/*burger link pic     صورة البرجر في الهوم*/
+#a{
+	margin-top: 1.5em;
+  position: relative;
+  margin-bottom: 3em;
+}
+#b{
+	float: left;
+  position: absolute;
+  bottom: 10px;
+  left: 18px;
+  padding: 1em 2em 2em 2em;
+  background-color: rgba(0,0,0,0.5);
+  max-width: 45%;
+  height: 50%;
+  border-left: 5px solid #00ba37;
+  color: rgb(249, 252, 247);
+  margin-left: 2.0em;
+  margin-bottom: 40px;
+}
+
+#c{
+	font-family: 'Kalam', cursive;
+	float: center;
+  position: absolute;
+  top: 2.3em;
+  right: 3.5em;
+  padding: 1em 2em 2em 2em;
+  color: #458a2d;
+  margin-left: 2.0em;
+  font-size: 65px;
+
+  margin-bottom: 40px;
+}
+
+.imgburger{
+	width:100%;
+	height: auto;
+}
+
+/*  اللينك حق وصفة البرجر في الهوم*/
+#linkburger:hover{
+	background-color: #00ba37;
+}
+#linkburger{
+	background-color: #1ed14b;
+	padding: 0.8em 0.8em 0.8em 0.8em;
+	text-decoration: none;
+	color: white;
+	margin-top: 10px;
+	position: relative;
+	top: 16px;
+}
+
+
+article{
+	float: left;
+	width: 65%;
+	margin-top:3em;
+	margin-left:3em;
+	
+}
+
+section{
+	padding: 2em 2em 2em 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	/*background-color: blue;*/
+	
+}
+
+/* ----------------------------Header Part -------------------------------------*/
+header{
+	border-bottom: 2px solid lightgray;
+}
+
+#logo{
+	margin-left:2em;
+	max-width: 12.5%; 
+	height: auto; 
+}
+
+nav ul{
+	float: right;
+	margin-top: 36px;
+	margin-right: 10px;
+	list-style-type: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 16px;
+	top: 4em;
+}
+
+nav ul li{
+	display: inline;
+	border-right: 2px solid gray;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+nav ul li:last-child{
+	border-right: none;
+	border-left: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black; 
+}
+
+nav ul li a:hover{
+	text-decoration: underline;
+}
+/*----------------------------------------------------------------------------*/
+
+
+
+
+
+/*~~~~Recipes Pages CSS~~~~~*/
+
+
+/*rating stars         نجوم التقييم  */
+.rating{
+	padding-left:0px;
+  list-style-type: none;
+}
+.rating > li:before{
+            content: 'star';
+            font-family: 'Material Icons';
+            font-size: 25px;
+			color: #ffe014;
+        }
+.rating > li{		
+display: inline;
+}
+
+/*difficulty green  مستوى صعوبة الوصفة*/
+.diff{
+	font-size: large;
+	font-weight: bold;
+	color: white;
+	background-color: #00ba37;
+	padding: 1em 2em 1em 2em;
+	border-left: 4px solid #009122;
+}
+
+/*     الكلام اللي تحت اسم الوصفة -- معلومات التحضير*/
+.recinfo{
+	border-left: 4px solid #00ba37;
+	font-weight: 500;
+	padding: 1em;
+}
+
+
+/*recipe steps        خطوات اعداد الوصفة*/
+ol{
+	list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+  margin-left: 30px;
+  position: relative;
+  margin-bottom: 3em;
+  color: gray;
+  font-weight: 350;
+}
+ol li::before {
+  content: "0" counter(my-awesome-counter) ". ";
+  color: rgba(60, 60, 61, 0.9);
+  font-weight: 450;
+  position: absolute;
+  font-size: 32px;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 40px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+}
+
+
+/*ingredient list              المقادير --عاليمين*/
+.ingrlist{
+	list-style-type: square;
+}
+.ingrlist > li{		
+margin: 2em 2em 2em 0em;
+font-weight: bold;
+
+}
+
+
+
+
+/*recipe article */
+#recipeart{
+	width: 55%;
+	margin-top:0px;
+	padding-top:0em;
+	margin-left:6em;
+}
+/*recipe picture */
+#recipepic{
+	margin: 2em 0em 0em 0em;
+	/*padding-top:0em;*/
+	padding-bottom: 0em;
+	
+}
+/*recipe picture */
+.imgr2{
+	float: center;
+	width:87.5%;
+	height: auto;
+	padding-left: 5em;
+}
+
+
+/* ---------------------------Aside Part --------------------------------------*/
+aside{
+	margin-top:0em;
+	margin-right:1em;
+	float: right;
+	width:25%;
+	/*background-color: gray;*/
+}
+
+.side{
+	padding: 7px;
+	padding-left:15px;
+	padding-right:15px;
+	margin-right:1.5em;
+}
+
+.ingredients{
+	margin-right:1em;
+	float: right;
+	width:35%;
+}
+
+.info{
+	float: right;
+	text-align: right;
+	margin-right: 4em;
+	padding-top:11px;
+	
+}
+/*7-day veggie challenge picture */
+.daypic{
+	/*padding-right: 0.5em;
+	padding-bottom: 0.5em;
+	margin-right: 0.2em;*/
+	padding-right:10px;
+	padding-bottom:3px;
+	max-width:47%;
+	height: auto;
+}
+
+.videoHeader{
+	font-size: 32px;
+	margin-top:4em;
+}
+
+video{
+	border: 2px solid gray;
+}
+
+/*---------------------------------------------------------------*/
+
+
+/*~~~~Home Page - Vegetarian defenition~~~*/
+
+/*  الصورة اللي على يسار الكلام*/
+.vpic{
+	float: left;
+	width: 45%;
+	height: auto;
+	margin-right: 1em;
+	position: relative;
+	top:0;
+	left:0;
+	border-right: 5px solid #00ba37;
+}
+/*vegetarian meaning   التعريف*/
+.vmeaning{
+	font-size: 117%;
+	padding: 0px 0px 0px 0px;
+	padding-bottom: 15px;
+	background-image: url(photo.jpg);	
+}
+/*header h2*/
+#vh2{
+	padding-top: 2em;
+	/*font-family: 'Acme', sans-serif;*/
+    font-family: 'Patua One', cursive;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+/*paragraph p*/
+#vp{
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+
+/*~~~~Home Page - Vegetarian diet & Vegan diet~~~*/
+
+/*vegetarian diet*/
+.vtdiet{
+	float: left;
+	width: 38.5%;
+	height: auto;
+	padding: 1em 2em 1em 2em;
+	border: 5px solid #00ba37;
+	border-radius: 25px;
+    background-color: #f0ffeb;/**/
+}
+/*vegan diet*/
+.vdiet{
+	float: right;
+	width: 39%;
+	height: auto;
+	padding: 1em 2em 1em 2em;
+	border: 5px solid #00ba37;
+	border-radius: 25px;
+	background-color:#f0ffeb;/**/
+}
+
+
+#v5{
+	
+	border: 4px solid #00ba37;
+	border-radius: 25px;
+	/*padding: 1em 2em 1em 2em;
+	background-color: #f0ffeb;*/
+}
+
+
+
+/*form input boxes */
+.box{
+	background-color: gainsboro;
+	border: 0px solid black;
+	font-size: large;
+	padding:15px;
+}
+
+footer{
+	float:left;
+	margin-left: 5em;
+	margin-top:0px;
+	padding-top:0px;
+	
+}
+
+/*---------------------------------------------------------------*/
+
+
+/*~~~~Veggies' Challenge-  table ~~~*/
+
+#customers{
+    font-family:sans-serif;
+    width: 70%;
+	height:50%;
+	 margin-left: auto;
+  margin-right: auto;
+	
+  }
+
+   #customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  }
+
+    #customers th {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color:9ACD32;
+   color:OliveDrab;
+  
+    }
+	
+	
+/*---------------------------------------------------------------*/	
+
+/* :: 8.0 Best Receipe Area */
+.best-receipe-area {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 50px;
+  text-align: center;  }
+
+.single-best-receipe-area {
+  position: relative;
+  z-index: 1; }
+.single-best-receipe-area img {
+    border-bottom: 3px solid #40ba37;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;	}
+.single-best-receipe-area .receipe-content {
+    padding-top: 30px;
+    text-align: center; }
+.single-best-receipe-area .receipe-content h5 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: 400;
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms; }
+.single-best-receipe-area .receipe-content h5:hover, .single-best-receipe-area .receipe-content h5:focus {
+        color: #40ba37; }
+.single-best-receipe-area .receipe-content .ratings i {
+      font-size: 11px;
+      color: #fbb710;
+      display: inline-block;
+      padding: 0 1px; }
+	 
+	 /*---------------------------------------------------------------*/	
+
+/* :: 8.0 Best Receipe Area */
+
+.imgside{
+	width:100%;
+	height: auto;
+}
+
+#social{
+	/*background-color:gainsboro;*/
+	width: 90%;
+	margin-top:4em;
+	margin-left:0px;
+	margin-right:0px;
+	padding-top: 2em; 
+	padding-bottom: 2em; 
+	padding-left: 5em; 
+	padding-right: 3em; 
+	border-top: 2px solid darkgray;
+	
+}
+
+.media{
+	margin-right: 3.5em;
+	color:#404040;
+	
+}
